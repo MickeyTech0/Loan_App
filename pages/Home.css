@@ -1,0 +1,69 @@
+div.background {
+    background-image: url("../images/loan_home1.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 500px;
+    border: 1px solid white;
+}
+
+div.transbox {
+    font-size: 32px;
+    text-align: left;
+    /* margin-top: 10px; */
+    /* margin-left: 5%; */
+    border: 1px hidden white;
+}
+
+.tran {
+    color: rgb(52, 20, 126);
+}
+
+.on {
+    /* background-color: red; */
+    color: white;
+    padding: 6px;
+    border: 1px solid white;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+.on:hover {
+    color: white;
+    background-color: green;
+}
+
+.center:hover {
+    color: white;
+    border: 2px solid rgb(25, 119, 0);
+    border-bottom-color: hidden;
+    border-right-color: white;
+    border-left-color: white;
+}
+
+.in .nav-link {
+    color: rgb(22, 22, 22);
+    background-color: white;
+    border: 0;
+}
+
+.in:hover {
+    color: rgb(39, 110, 243);
+    background-color: white;
+    border: 0;
+}
+
+.back-to-top {
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+    width: 40px;
+    height: 40px;
+    z-index: 996;
+    border-radius: 50%;
+    transition: all 0.4s;
+}
+
+.back-to-top.active {
+    visibility: visible;
+    opacity: 1;
+}

@@ -1,0 +1,80 @@
+.back-to-top {
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+    width: 40px;
+    height: 40px;
+    z-index: 996;
+    border-radius: 50%;
+    transition: all 0.4s;
+}
+
+.back-to-top.active {
+    visibility: visible;
+    opacity: 1;
+}
+/* .back-to-left {
+    position: fixed;
+    right: 15px;
+    bottom: 440px;
+    width: 40px;
+    height: 40px;
+    z-index: 996;
+    border-radius: 50%;
+    transition: all 0.4s;
+}
+
+.back-to-left.active {
+    visibility: visible;
+    opacity: 1;
+} */
+
+.center:hover {
+    color: white;
+    border: 2px solid rgb(25, 119, 0);
+    border-bottom-color: hidden;
+    border-right-color: white;
+    border-top-color: white;
+    border-left-color: white;
+}
+
+.img1 {
+    width: 150%;
+    height: 100%;
+}
+
+div.background {
+    background-image: url("../images/marketing1.jpg");
+    background-size: cover;
+    width: 150%;
+    height: 100%;
+    border: 1px solid white;
+}
+
+div.transbox {
+    font-size: 32px;
+    text-align: left;
+    margin-top: 180px;
+    /* margin-left: 5%; */
+    border: 1px hidden white;
+}
+
+.tran {
+    color: rgb(52, 20, 126);
+}
+
+div.background2 {
+    background-image: url("../images/top.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 70%;
+    border: 1px solid white;
+}
+
+div.transbox2 {
+    font-size: 32px;
+    text-align: left;
+    margin-top: 110px;
+    margin-left: 5%;
+    border: 1px hidden white;
+}

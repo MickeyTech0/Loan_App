@@ -1,0 +1,166 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="register.css">
+    <link rel="stylesheet" href="../resources/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../resources/fontawesome/css/all.min.css">
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar">
+    <header id="First" class="align-items-center">
+        <div class="navbar navbar-expand-sm nav-light bg-light justify-content-between">
+            <ul class="navbar-nav list-group list-group-horizontal" style="margin-left: 5%; font-size: 12px;">
+                <li class="nav-item"><span class="far fa-envelope" style="color: rgb(2, 132, 11);"></span>
+                    <a href="#mickeystick9@gmail.com"
+                        style="color: rgb(16, 16, 16); text-decoration: none;">mickeystick9@gmail.com</a>
+                </li>
+                <li class="nav-item" style="margin-left: 10px;"><span class="fas fa-tablet-alt"
+                        style="color: rgb(2, 132, 54);"></span> +234 816 441 9629
+                </li>
+            </ul>
+            <ul class="navbar-nav list-group list-group-horizontal">
+                <li class="nav-item" style="margin-left: 10px;"><span class="fab fa-twitter"
+                        style="color: rgb(2, 132, 54);"></span></li>
+                <li class="nav-item" style="margin-left: 10px;"><span class="fab fa-facebook"
+                        style="color: rgb(2, 132, 54);"></span></li>
+                <li class="nav-item" style="margin-left: 10px;"><span class="fab fa-instagram"
+                        style="color: rgb(2, 132, 54);"></span></li>
+                <li class="nav-item" style="margin-left: 10px;"><span class="fab fa-linkedin"
+                        style="color: rgb(2, 132, 54);"></span></li>
+            </ul>
+        </div>
+    </header>
+    <div class="container-fluid sticky-top bg-white shadow">
+        <div class="container-fluid sticky-top" style="color: white;">
+            <nav class="navbar navbar-expand-sm" style="padding-top: -10%;">
+                <div class="container d-flex justify-content-evenly" style="margin-left: -2%;">
+                    <a class="navbar-brand" href="#MickeyLo"
+                        style="color: rgb(5, 103, 65); font-size: 25px; margin-left: 2%;"><b>MickeyLo</b></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapsibleNavbar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="collapsibleNavbar"
+                        style="margin-left: 32%; font-size: large;">
+                        <ul class="navbar-nav me-auto">
+                            <li class="nav-item center">
+                                <a class="nav-link" style="color: black; font-size: 15px;" href="Home.html">Home</a>
+                            </li>
+                            <li class="nav-item center">
+                                <a class="nav-link" style="color: black; font-size: 15px;" href="About.html">About
+                                    Us</a>
+                            </li>
+                            <li class="nav-item center">
+                                <a class="nav-link" style="color: black; font-size: 15px;" href="Loan program.html">Loan
+                                    program</a>
+                            </li>
+                            <li class="nav-item center">
+                                <a class="nav-link" style="color: black; font-size: 15px;"
+                                    href="Register.html">Register</a>
+                            </li>
+                            <li class="nav-item center">
+                                <a class="nav-link" style="color: black; font-size: 15px;"
+                                    href="Contact.html">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="d-grid">
+                        <a href="Loan.html" class="btn rounded-pill btn-sm" role="button"
+                            style="background-color: rgb(2, 132, 54); color: white;"><span
+                                class="d-md-inline d-none">Apply
+                                for</span> Loan</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        </nav>
+    </div>
+    <div class="container">
+        <h1 class="text-center">Register for loan</h1>
+        <hr>
+        <div class="d-flex justify-content-end">
+            <a href="" class="btn btn-secondary">Consumers</a>
+        </div>
+        <h3>Student Details</h3>
+        <form action="" method="post" class="row g-3">
+            <div class="col-md-4">
+                <label for="account" class="form-label">Account no</label>
+                <input type="number" class="form-control" placeholder="Enter account number" name="account" id="account">
+            </div>
+            <div class="col-md-4">
+                <label for="consumer name" class="form-label">Consumer Name</label>
+                <input type="text" class="form-control" placeholder="Enter Consumer Name" name="consumer name" id="consumer name">
+            </div>
+            <div class="col-md-4">
+                <label for="loan Amount" class="form-label">Loan Amount</label>
+                <input type="number" class="form-control" placeholder="Enter loan amount" name="loan amount" id="loan amount">
+            </div>
+            <div class="col-md-4">
+                <label for="installment" class="form-label">Installment</label>
+                <input type="number" class="form-control" placeholder="Enter installment" name="installment" id="installment">
+            </div>
+            <div class="col-md-4">
+                <label for="insterest rate" class="form-label">Insterest Rate</label>
+                <input type="number" class="form-control" placeholder="Enter Insterest Rate" name="insterest" id="insterest">
+            </div>
+            
+            
+            <div class="col-12">
+                <label for="plan">Plan</label>
+                <select class="form-select" id="plan" name="plan">
+                    <% for (const plan of plans) { %>
+                        <option value="<%- plan.id %>">
+                            <%- plan.name%>
+                        </option>
+                        <% } %>
+                </select>
+            </div>
+            <hr>
+            <h3> Details</h3>
+            <div class="col-md-6">
+                <label for="reference_name" class="form-label">Reference's Name</label>
+                <input type="text" class="form-control" placeholder="Enter Reference's Name" name="reference_name"
+                    id="reference_name">
+            </div>
+            <div class="col-md-6">
+                <label for="reference_phone" class="form-label">Reference's Phone No</label>
+                <input type="number" class="form-control" placeholder="Enter Reference's Phone No"
+                    name="reference_phone" id="reference_phone">
+            </div>
+            <div class="col-md-6">
+                <label for="reference_email" class="form-label">Reference's Email</label>
+                <input type="email" class="form-control" placeholder="Enter Reference's Email" name="reference_email"
+                    id="reference_email">
+            </div>
+            <div class="col-md-6">
+                <label for="reference_address" class="form-label">Reference's Address</label>
+                <input type="text" class="form-control" placeholder="Enter Reference's Address" name="reference_address"
+                    id="reference_address">
+            </div>
+            <div class="col-12 d-flex justify-content-end">
+                <button class="btn btn-primary" type="submit">Submit</button>
+            </div>
+        </form>
+
+
+        <section id="last">
+            <div style="background-color: rgb(232, 247, 241);">
+                <div class="navbar navbar-expand-sm pt-3 justify-content-between">
+                    <ul class="navbar-nav" style="margin-left: 5%; font-size: 12px;">
+                        <li>© Copyright MickeyLo. All Rights Reserved <br>
+                            Designed by <a href="#mickeytech.bootstrapmade" class="linklast">MickeyTech</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <a href="#" class=" align-items-center justify-content-center back-to-top active">
+            <i class="fas fa-arrow-alt-circle-up text-success fa-2x"></i>
+            <script src="../resources/bootstrap/js/bootstrap.bundle.min.js"></script>
+    </body>
+    
+    </html>
